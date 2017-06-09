@@ -1,3 +1,56 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+#timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 3px;
+  background: #ddd;
+}
+
+@media only screen and (min-width: 1170px) {
+  #timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  #timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .row {
+    .col {
+      .card:nth-child(even) {
+        float: right;
+      }
+    }
+  }
+
+}
+
+.card {
+  width: 45%;
+}
+
+footer {
+  height: 200px;
+  background: black;
+  padding: 3rem;
+  p {
+    color: #ddd;
+    text-align: center;
+  }
+}
