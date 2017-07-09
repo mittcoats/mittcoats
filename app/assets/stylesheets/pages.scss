@@ -95,6 +95,11 @@ body, p {
         color: #777;
       }
     }
+    .card-block {
+      -webkit-box-flex: 1;
+      flex: 1 1 auto;
+      padding: 1.25rem;
+    }
   }
 
   .m-timeline > li > .m-timeline-card:before {
