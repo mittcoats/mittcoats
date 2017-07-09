@@ -1,84 +1,276 @@
 <header>
   <nav class="navbar navbar-light bg-faded">
     <a class="navbar-brand mx-auto" href="#">
-      M
+      <%= image_tag("mountain_logo.png") %>
     </a>
   </nav>
 </header>
 
-<section id="about">
+<section id="m-about-section">
   <div class="container">
+    <h2 class="text-center text-uppercase">Mitt Coats</h2><br>
+    <h6 class="text-center font-italic">Architect</h6>
     <div class="row">
-      <h2>Mitt Coats</h2>
-      <p>Architect</p>
+      <div class="m-social-icons">
+        <a href="https://www.twitter.com/mittcoats">
+          <i class="fa fa-twitter fa-lg"></i>
+        </a>
+        <a href="https://www.github.com/mittcoats">
+          <i class="fa fa-github fa-lg"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mittcoats">
+          <i class="fa fa-linkedin fa-lg"></i>
+        </a>
+      </div>
     </div>
     <hr>
   </div>
-
 </section>
 
-<section>
-  <div id="timeline" class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+<section id="m-timeline-section">
+  <div class="container clearfix">
+    <ul class="m-timeline">
+      <!-- 1 -->
+      <li>
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://usskiteam.com/">
+              <%= image_tag("usst_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">U.S. Ski Team</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2004 - 2006</small>
+          </div>
           <div class="card-block">
             <p class="card-text">
-              Some quick example text to build on the card title
-              and make up the bulk of the card's content.
+              Raced in alpine downhill events around the world
             </p>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+      </li>
+      <!-- 2 -->
+      <li class="m-timeline-inverted">
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://dartmouth.edu/">
+              <%= image_tag("dartmouth_logo.svg", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">Dartmouth</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2005 - 2011</small>
+          </div>
           <div class="card-block">
             <p class="card-text">
-              Some quick example text to build on the card title
-              and make up the bulk of the card's content.
+              Studied health economics and German literature
             </p>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <img class="card-img-top" src="..." alt="Card image cap">
+      </li>
+      <!-- 3 -->
+      <li>
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://lds.org/">
+              <%= image_tag("moroni_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">Mission</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2006 - 2008</small>
+          </div>
           <div class="card-block">
             <p class="card-text">
-              Some quick example text to build on the card title
-              and make up the bulk of the card's content.
+              Served LDS volunteer mission in Washington, D.C.
             </p>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="card">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-block">
-        <p class="card-text">
-          Some quick example text to build on the card title
-          and make up the bulk of the card's content.
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <img class="card-img-top" src="..." alt="Card image cap">
-      <div class="card-block">
-        <p class="card-text">
-          Some quick example text to build on the card title
-          and make up the bulk of the card's content.
-        </p>
-      </div>
-    </div>
-
-
+      </li>
+      <!-- 4 -->
+      <li class="m-timeline-inverted">
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://angelhealth.io/">
+              <%= image_tag("socratix_logo.png", class: 'image-fluid',
+                                             height: '45') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">Socratix Health</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2005 - 2011</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Built and launch survey app for orthopedics
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 5 -->
+      <li>
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://brynmawr.edu/">
+              <%= image_tag("bryn_mawr_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">Bryn Mawr</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2011 - 2012</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Completed pre-med post-baccalaureate
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 6 -->
+      <li class="m-timeline-inverted">
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://chibe.upenn.edu/">
+              <%= image_tag("upenn_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">CHIBE</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2012 - 2013</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Administered clinical trial for patient tracking and incentives
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 7 -->
+      <li>
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://med.upenn.edu/">
+              <%= image_tag("upenn_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">PennMed</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2013 - 2016</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Medical student; Neuro-surgery research
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 8 -->
+      <li class="m-timeline-inverted">
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://pennhealthx.com/">
+              <%= image_tag("healthx_logo.png", class: 'image-fluid',
+                                             height: '30') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">HealthX</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2013 - 2015</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Lead student innovation org; co-created seed fund
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 9 -->
+      <li>
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://pennapps.com/">
+              <%= image_tag("pennapps_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">HealthX</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2014 - 2016</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Founded health vertical in PennApps hackathon
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 10 -->
+      <li class="m-timeline-inverted">
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://healthcareinnovation.upenn.edu/">
+              <%= image_tag("upenn_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">Center for Innovation</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2015 - 2016</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Developed survey app for transplant surgery risk assessment
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 11 -->
+      <li>
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://fireupsports.com/">
+              <%= image_tag("fireup_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">FireUp</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2015 - 2016</small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Develop app to serve as the online home for sports
+            </p>
+          </div>
+        </div>
+      </li>
+      <!-- 12 -->
+      <li class="m-timeline-inverted">
+        <div class="m-timeline-badge"></div>
+        <div class="card m-timeline-card">
+          <div class="card-header">
+            <a href="http://angelhealth.io/">
+              <%= image_tag("angel_logo.png", class: 'image-fluid',
+                                             height: '50') %>
+            </a>
+            <h4 class="card-title mb-0 ml-4">Angel Health</h4>
+            <i class="fa fa-circle ml-3"></i>
+            <small class="m-timeline-time mb-0 ml-3">2016 - </small>
+          </div>
+          <div class="card-block">
+            <p class="card-text">
+              Developed software that builds you a personal health timeline
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
   </div>
 </section>
 
