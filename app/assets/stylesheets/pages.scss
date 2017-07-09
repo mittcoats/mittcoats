@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import 'variables';
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $header-font !important;
@@ -179,26 +179,6 @@ body, p {
     right: auto;
   }
 
-  .m-timeline-badge.primary {
-    background-color: #2e6da4 !important;
-  }
-
-  .m-timeline-badge.success {
-    background-color: #3f903f !important;
-  }
-
-  .m-timeline-badge.warning {
-    background-color: #f0ad4e !important;
-  }
-
-  .m-timeline-badge.danger {
-    background-color: #d9534f !important;
-  }
-
-  .m-timeline-badge.info {
-    background-color: #5bc0de !important;
-  }
-
   .m-timeline-title {
     margin-top: 0;
     color: inherit;
@@ -211,6 +191,45 @@ body, p {
 
   .m-timeline-body > p + p {
     margin-top: 5px;
+  }
+}
+
+// Responsive media queries
+#m-timeline-section {
+  @include media-breakpoint-down(sm) {
+    .m-timeline:before {
+      top: 0;
+      bottom: 0;
+      position: absolute;
+      content: " ";
+      width: 3px;
+      background-color: #eeeeee;
+      left: 0%;
+      margin-left: -1.5px;
+    }
+    .m-timeline > li > .m-timeline-card {
+      width: 100%;
+      margin-left: 2rem;
+    }
+    .m-timeline > li > .m-timeline-card:before {
+      border-left-width: 0;
+      border-right-width: 15px;
+      left: -15px;
+      right: auto;
+    }
+    .m-timeline > li > .m-timeline-card:after {
+      border-left-width: 0;
+      border-right-width: 14px;
+      left: -14px;
+      right: auto;
+    }
+    .m-timeline > li.m-timeline-inverted > .m-timeline-card {
+      float: left;
+      margin-left: 2rem;
+    }
+    .m-timeline > li > .m-timeline-badge {
+      left: 0%;
+    }
   }
 }
 
