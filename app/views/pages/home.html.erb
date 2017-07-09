@@ -1,11 +1,13 @@
+<!-- Header with logo and navbar -->
 <header>
   <nav class="navbar navbar-light bg-faded">
     <a class="navbar-brand mx-auto" href="#">
-      <%= image_tag("mountain_logo.png") %>
+      <%= image_tag("mountain_logo.png", alt: "Mitt Coats logo") %>
     </a>
   </nav>
 </header>
 
+<!-- About section with name, title, and social media links -->
 <section id="m-about-section">
   <div class="container">
     <h2 class="text-center text-uppercase">Mitt Coats</h2><br>
@@ -27,6 +29,8 @@
   </div>
 </section>
 
+<!-- Timeline section with an unordered list and list items for each
+timeline event. Bootstrap styles for formatting and structure. -->
 <section id="m-timeline-section">
   <div class="container clearfix">
     <ul class="m-timeline">
@@ -37,7 +41,8 @@
           <div class="card-header">
             <a href="http://usskiteam.com/">
               <%= image_tag("usst_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "US Ski Team logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">U.S. Ski Team</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -57,7 +62,8 @@
           <div class="card-header">
             <a href="http://dartmouth.edu/">
               <%= image_tag("dartmouth_logo.svg", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "Dartmouth logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">Dartmouth</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -77,7 +83,8 @@
           <div class="card-header">
             <a href="http://lds.org/">
               <%= image_tag("moroni_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "LDS Logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">Mission</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -97,7 +104,8 @@
           <div class="card-header">
             <a href="http://angelhealth.io/">
               <%= image_tag("socratix_logo.png", class: 'image-fluid',
-                                             height: '45') %>
+                                             height: '45',
+                                             alt: "Socratix logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">Socratix Health</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -117,7 +125,8 @@
           <div class="card-header">
             <a href="http://brynmawr.edu/">
               <%= image_tag("bryn_mawr_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "Bryn Mawr logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">Bryn Mawr</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -136,8 +145,9 @@
         <div class="card m-timeline-card">
           <div class="card-header">
             <a href="http://chibe.upenn.edu/">
-              <%= image_tag("upenn_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+              <%= image_tag("chibe_logo.png", class: 'image-fluid',
+                                             height: '50',
+                                             alt: "CHIBE logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">CHIBE</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -157,7 +167,8 @@
           <div class="card-header">
             <a href="http://med.upenn.edu/">
               <%= image_tag("upenn_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "PennMed logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">PennMed</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -177,7 +188,8 @@
           <div class="card-header">
             <a href="http://pennhealthx.com/">
               <%= image_tag("healthx_logo.png", class: 'image-fluid',
-                                             height: '30') %>
+                                             height: '30',
+                                             alt: "HealthX logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">HealthX</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -197,9 +209,10 @@
           <div class="card-header">
             <a href="http://pennapps.com/">
               <%= image_tag("pennapps_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "PennApps logo") %>
             </a>
-            <h4 class="card-title mb-0 ml-4">HealthX</h4>
+            <h4 class="card-title mb-0 ml-4">PennApps</h4>
             <i class="fa fa-circle ml-3"></i>
             <small class="m-timeline-time mb-0 ml-3">2014 - 2016</small>
           </div>
@@ -217,7 +230,8 @@
           <div class="card-header">
             <a href="http://healthcareinnovation.upenn.edu/">
               <%= image_tag("upenn_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "UPenn Logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">Center for Innovation</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -237,7 +251,8 @@
           <div class="card-header">
             <a href="http://fireupsports.com/">
               <%= image_tag("fireup_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "FireUp logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">FireUp</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -257,7 +272,8 @@
           <div class="card-header">
             <a href="http://angelhealth.io/">
               <%= image_tag("angel_logo.png", class: 'image-fluid',
-                                             height: '50') %>
+                                             height: '50',
+                                             alt: "Angel Health logo") %>
             </a>
             <h4 class="card-title mb-0 ml-4">Angel Health</h4>
             <i class="fa fa-circle ml-3"></i>
@@ -274,6 +290,7 @@
   </div>
 </section>
 
+<!-- Footer section with concluding quote -->
 <footer>
   <div class="container">
     <p class="font-italic mx-auto">

@@ -1,28 +1,19 @@
-// Place all the styles related to the pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// *==== Styles for home page ====*
 
-
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $header-font !important;
-}
-
-body, p {
-  font-family: $body-font !important;
-}
-
+// About section styles
 #m-about-section {
+
   margin: 2rem 0;
+
   h2 {
     letter-spacing: 3px;
   }
+
   .m-social-icons {
     display: block;
     margin: auto;
     a {
       text-decoration: none;
-
       i {
         margin: 0 1rem;
         color: #aaa;
@@ -32,8 +23,10 @@ body, p {
       }
     }
   }
+
 }
 
+// Timeline section styles
 #m-timeline-section {
 
   .m-timeline {
@@ -42,6 +35,7 @@ body, p {
     position: relative;
   }
 
+  // Timeline verticle line, positioned in middle of page
   .m-timeline:before {
     top: 0;
     bottom: 0;
@@ -102,6 +96,16 @@ body, p {
     }
   }
 
+  // Time period indicated in timeline
+  .m-timeline-time {
+    color: #777;
+    font-size: 1rem;
+    font-style: italic;
+    position: relative;
+    z-index: 100;
+  }
+
+  // Arrow pointined to timeline for odd numbered cards
   .m-timeline > li > .m-timeline-card:before {
     position: absolute;
     top: 26px;
@@ -126,6 +130,7 @@ body, p {
     content: " ";
   }
 
+  // Dots along timeline
   .m-timeline > li > .m-timeline-badge {
     color: #fff;
     width: 25px;
@@ -140,31 +145,14 @@ body, p {
     background-color: $red;
     z-index: 100;
     border: solid 4px white;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
-
-  .m-timeline-time {
-    color: #777;
-    // width: 125px;
-    // height: 25px;
-    // line-height: 50px;
-    font-size: 1rem;
-    font-style: italic;
-    // text-align: center;
-    position: relative;
-    // top: 20px;
-    // left: 80px;
-    // margin-left: -;
-    z-index: 100;
+    border-radius: 50%;
   }
 
   .m-timeline > li.m-timeline-inverted > .m-timeline-card {
     float: right;
   }
 
+  // Arrows pointing to timeline for even numbered timeline cards
   .m-timeline > li.m-timeline-inverted > .m-timeline-card:before {
     border-left-width: 0;
     border-right-width: 15px;
@@ -192,11 +180,14 @@ body, p {
   .m-timeline-body > p + p {
     margin-top: 5px;
   }
+
 }
 
-// Responsive media queries
+// Styles for responsiveness on mobile screens
 #m-timeline-section {
+
   @include media-breakpoint-down(sm) {
+
     .m-timeline:before {
       top: 0;
       bottom: 0;
@@ -204,80 +195,42 @@ body, p {
       content: " ";
       width: 3px;
       background-color: #eeeeee;
-      left: 0%;
+      left: 0;
       margin-left: -1.5px;
     }
+
     .m-timeline > li > .m-timeline-card {
       width: 95%;
       margin-left: 2rem;
     }
+
     .m-timeline > li > .m-timeline-card:before {
       border-left-width: 0;
       border-right-width: 15px;
       left: -15px;
       right: auto;
     }
+
     .m-timeline > li > .m-timeline-card:after {
       border-left-width: 0;
       border-right-width: 14px;
       left: -14px;
       right: auto;
     }
+
     .m-timeline > li.m-timeline-inverted > .m-timeline-card {
       float: left;
       margin-left: 2rem;
     }
+
     .m-timeline > li > .m-timeline-badge {
-      left: 0%;
+      left: 0;
     }
+
   }
 }
 
-
-//
-// #m-timeline {
-//   position: relative;
-//   padding: 2em 0;
-//   margin-top: 2em;
-//   margin-bottom: 2em;
-// }
-// #m-timeline::before {
-//   /* this is the vertical line */
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 18px;
-//   height: 100%;
-//   width: 3px;
-//   background: #ddd;
-// }
-//
-// .m-timeline-block {
-//   position: relative;
-//   margin: 2rem 0;
-// }
-//
-// @media only screen and (min-width: 1170px) {
-//   #m-timeline {
-//     margin-top: 3em;
-//     margin-bottom: 3em;
-//   }
-//   #m-timeline::before {
-//     left: 50%;
-//     margin-left: -2px;
-//   }
-//   .m-timeline-block {
-//     height: 100%;
-//     .card:nth-child(even)  {
-//       float: right;
-//     }
-//   }
-//
-//   .card {
-//     width: 45%;
-//   }
-// }
-
+// Styles for the footer
 footer {
   height: 200px;
   background: black;
